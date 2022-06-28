@@ -15,10 +15,9 @@ def winner(user, com):
     elif com == 'r' and user == 's' or com == 's' and user == 'r' or com == 'p' and user == 's':
         return "You chose {} and the computer chose {}. You lost.".format(user, com)
 
-def best_of():
+def num_of_games():
     num = int(input("How many games would you like to play?"))
     for i in range(num):
         play()
-    
 
-best_of()
+num_of_games()
